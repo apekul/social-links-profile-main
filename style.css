@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+body {
+  position: relative;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.card-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-box {
+  width: 22rem;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-box header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-box header h1 {
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-box header p {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  color: hsl(75, 94%, 57%);
+}
+
+.card-box blockquote {
+  font-weight: 400;
+}
+
+.card-avatar {
+  border-radius: 100%;
+  width: 7rem;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.social-list li {
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.social-list li a {
+  padding: 15px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+}
+
+.social-list li a:hover {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(1.5);
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  font-style: 800;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(75, 94%, 57%);
+}
+
+@media only screen and (max-width: 375px) {
+  .card-box {
+    width: 20rem;
+    padding: 2rem;
+  }
+}
